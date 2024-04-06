@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/corners_light_bg"
+    android:gravity="center"
+    android:padding="10dp"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        >
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:src="@drawable/questions"
+            ></ImageView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn có chắc muốn bắt đầu ?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginTop="0dp"
+        ></TextView>
+    <TextView
+        android:id="@+id/login_failed_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bạn sẽ bắt đầu từ câu hỏi đầu tiên."
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_marginTop="10dp"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:weightSum="2"
+        >
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Huỷ bỏ"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorDarkTheme"
+            android:layout_weight="1"
+            ></Button>
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bắt đầu"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/colorLightTheme"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            ></Button>
+    </LinearLayout>
+
+
+</LinearLayout>

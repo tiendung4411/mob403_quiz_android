@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.mob403_quiz.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/collectionsFragment"
+        android:name="com.example.mob403_quiz.Fragments.CollectionsFragment"
+        android:label="fragment_collections"
+        tools:layout="@layout/fragment_collections" />
+
+    <fragment
+        android:id="@+id/rankingFragment"
+        android:name="com.example.mob403_quiz.Fragments.RankingFragment"
+        android:label="fragment_ranking"
+        tools:layout="@layout/fragment_ranking" />
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.mob403_quiz.Fragments.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <!-- Add more fragments here -->
+
+</navigation>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Login_Activity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/left_icon"
+        android:clickable="true"
+        android:onClick="back"
+        android:contentDescription="TODO" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="left"
+        android:orientation="horizontal"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello there"
+        android:textSize="40sp"
+        android:layout_gravity="left"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        android:textStyle="bold"
+        />
+    <ImageView
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="left"
+        android:src="@drawable/waving"
+        android:contentDescription="TODO" />
+
+
+    </LinearLayout>
+
+<!--    <com.rengwuxian.materialedittext.MaterialEditText-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="30dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_marginRight="30dp"-->
+<!--        android:hint="username"-->
+<!--        app:met_floatingLabelText="Username"-->
+
+<!--        />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="30dp"
+        >
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeWidth="0dp"
+            android:id="@+id/edt_username_layout"
+            android:layout_marginRight="30dp"
+            android:hint="Username"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/edt_username"
+                android:inputType="text"
+                android:ems="15"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_marginTop="20dp"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeWidth="0dp"
+            android:id="@+id/edt_password_layout"
+            android:layout_marginRight="30dp"
+            android:hint="Password"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/edt_password"
+                android:inputType="textPassword"
+
+                android:ems="15"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remember me"
+                android:id="@+id/cbo_remember"
+                >
+
+            </CheckBox>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot password?"
+        android:textColor="@color/primary_dark_color"
+        android:layout_marginTop="30dp"
+        ></TextView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="28dp"
+        android:paddingEnd="28dp"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Sign in"
+            android:id="@+id/btn_login"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

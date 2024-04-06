@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="color_primary">#03A9F4</color>
+    <color name="primary_dark_color">#0288D1</color>
+    <color name="accent_color">#FF4081</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="secondary">#f0f0f0</color>
+    <color name="colorControlHighlight">#00608B</color>
+    <color name="colorControlActivated">#0684BD</color>
+    <color name="edtBackground_light">#f6f5fa</color>
+    <color name="edtBackground_dark">#3E3E3E</color>
+    <!-- In res/values/colors.xml -->
+    <color name="colorDarkTheme">#FF5722</color> <!-- Example color for dark theme -->
+    <color name="colorLightTheme">#03A9F4</color> <!-- Example color for light theme -->
+
+</resources>
